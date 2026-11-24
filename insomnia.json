@@ -1,0 +1,234 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-24T12:20:37.414Z",
+  "__export_source": "Otimizador StatTrak v1.1",
+  "resources": [
+    {
+      "_id": "wrk_gestao_residuos",
+      "parentId": null,
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "name": "API gestao_residuos - StatTrak",
+      "description": "Coleção gerada automaticamente",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_gestao_residuos_usuario",
+      "parentId": "wrk_gestao_residuos",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "name": "USUARIO",
+      "description": "Rotas CRUD para a tabela usuario",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -2000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_usuario_listar",
+      "parentId": "fld_gestao_residuos_usuario",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/usuario",
+      "name": "Listar usuario",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -5,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuario_buscar",
+      "parentId": "fld_gestao_residuos_usuario",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Buscar usuario por id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -4,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuario_criar",
+      "parentId": "fld_gestao_residuos_usuario",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/usuario",
+      "name": "Criar usuario",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"exemplo\",\n  \"email\": \"exemplo@email.com\",\n  \"senha\": \"senha123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -3,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuario_atualizar",
+      "parentId": "fld_gestao_residuos_usuario",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Atualizar usuario",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"exemplo\",\n  \"email\": \"exemplo@email.com\",\n  \"senha\": \"senha123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -2,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuario_deletar",
+      "parentId": "fld_gestao_residuos_usuario",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Deletar usuario",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1,
+      "_type": "request"
+    },
+    {
+      "_id": "fld_gestao_residuos_ocorrencia",
+      "parentId": "wrk_gestao_residuos",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "name": "OCORRENCIA",
+      "description": "Rotas CRUD para a tabela ocorrencia",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_ocorrencia_listar",
+      "parentId": "fld_gestao_residuos_ocorrencia",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/ocorrencia",
+      "name": "Listar ocorrencia",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -5,
+      "_type": "request"
+    },
+    {
+      "_id": "req_ocorrencia_buscar",
+      "parentId": "fld_gestao_residuos_ocorrencia",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/ocorrencia/1",
+      "name": "Buscar ocorrencia por id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -4,
+      "_type": "request"
+    },
+    {
+      "_id": "req_ocorrencia_criar",
+      "parentId": "fld_gestao_residuos_ocorrencia",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/ocorrencia",
+      "name": "Criar ocorrencia",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": 1,\n  \"local\": \"exemplo\",\n  \"tipoResiduo\": \"exemplo\",\n  \"nivelRisco\": \"Baixo\",\n  \"data\": \"2026-01-01\",\n  \"status\": \"Novo\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -3,
+      "_type": "request"
+    },
+    {
+      "_id": "req_ocorrencia_atualizar",
+      "parentId": "fld_gestao_residuos_ocorrencia",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/ocorrencia/1",
+      "name": "Atualizar ocorrencia",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": 1,\n  \"local\": \"exemplo\",\n  \"tipoResiduo\": \"exemplo\",\n  \"nivelRisco\": \"Baixo\",\n  \"data\": \"2026-01-01\",\n  \"status\": \"Novo\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -2,
+      "_type": "request"
+    },
+    {
+      "_id": "req_ocorrencia_deletar",
+      "parentId": "fld_gestao_residuos_ocorrencia",
+      "modified": 1795522837414,
+      "created": 1795522837414,
+      "url": "http://localhost:3000/ocorrencia/1",
+      "name": "Deletar ocorrencia",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1,
+      "_type": "request"
+    }
+  ]
+}
