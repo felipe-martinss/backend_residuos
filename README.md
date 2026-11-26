@@ -11,6 +11,9 @@ O sistema permite realizar o cadastro de usuários, registrar informações, con
 <p align="left">
   <img src="./docs/image.png" alt="Diagrama de Classes">
 </p>
+<p align="left">
+  <img src="diagrama.png" alt="Diagrama de Classes">
+</p>
 
 ---
 
