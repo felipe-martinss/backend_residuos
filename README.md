@@ -98,11 +98,6 @@ Utilizar o Insomnia para realizar requisições HTTP e testar as funcionalidades
 </p>
 
 ## Testes ocorrencias
-### Gestão de resíduos
-<p align="left">
-  <img src="./docs/gestao_residuos.png" alt="Gestao de residuos">
-</p>
-
 ### Listar ocorrencia
 <p align="left">
   <img src="./docs/listar_ocorrencia.png" alt="Listar ocorrencia">
