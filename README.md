@@ -66,3 +66,7 @@ Utilizar o Insomnia para realizar requisições HTTP e testar as funcionalidades
 
 
 ## Testes do Insomnia
+listar usuario
+<p align="left">
+  <img src="./docs/listar_usuario.png" alt="Diagrama de Classes">
+</p>
